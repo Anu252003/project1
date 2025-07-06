@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Articles - TechPulse</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="articles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span class="logo-text">⚡ TechPulse</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="articles.html" class="active">Articles</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="subscribe.html" class="btn btn-primary">Subscribe</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="articles-hero">
+      <div class="container">
+        <h1>All Articles</h1>
+        <p>Discover the latest insights, trends, and analysis in technology</p>
+      </div>
+    </section>
+
+    <section class="articles-content">
+      <div class="container">
+        <div class="articles-layout">
+          <aside class="sidebar">
+            <div class="search-box">
+              <input
+                type="text"
+                placeholder="Search articles..."
+                id="searchInput"
+              />
+              <button type="button" class="search-btn">🔍</button>
+            </div>
+
+            <div class="filter-section">
+              <h3>Categories</h3>
+              <div class="filter-options">
+                <label class="filter-option">
+                  <input type="checkbox" value="ai" checked />
+                  <span>Artificial Intelligence</span>
+                </label>
+                <label class="filter-option">
+                  <input type="checkbox" value="cybersecurity" checked />
+                  <span>Cybersecurity</span>
+                </label>
+                <label class="filter-option">
+                  <input type="checkbox" value="webdev" checked />
+                  <span>Web Development</span>
+                </label>
+                <label class="filter-option">
+                  <input type="checkbox" value="mobile" checked />
+                  <span>Mobile Tech</span>
+                </label>
+                <label class="filter-option">
+                  <input type="checkbox" value="cloud" checked />
+                  <span>Cloud Computing</span>
+                </label>
+                <label class="filter-option">
+                  <input type="checkbox" value="datascience" checked />
+                  <span>Data Science</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="filter-section">
+              <h3>Sort By</h3>
+              <div class="filter-options">
+                <label class="filter-option">
+                  <input type="radio" name="sort" value="latest" checked />
+                  <span>Latest</span>
+                </label>
+                <label class="filter-option">
+                  <input type="radio" name="sort" value="popular" />
+                  <span>Most Popular</span>
+                </label>
+                <label class="filter-option">
+                  <input type="radio" name="sort" value="trending" />
+                  <span>Trending</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="popular-tags">
+              <h3>Popular Tags</h3>
+              <div class="tags">
+                <span class="tag">#AI</span>
+                <span class="tag">#MachineLearning</span>
+                <span class="tag">#Cybersecurity</span>
+                <span class="tag">#WebDev</span>
+                <span class="tag">#JavaScript</span>
+                <span class="tag">#Python</span>
+                <span class="tag">#Cloud</span>
+                <span class="tag">#Blockchain</span>
+              </div>
+            </div>
+          </aside>
+
+          <main class="articles-main">
+            <div class="articles-header">
+              <h2>Latest Articles</h2>
+              <div class="articles-count">
+                <span id="articleCount">24</span> articles found
+              </div>
+            </div>
+
+            <div class="articles-grid" id="articlesGrid">
+              <!-- Article 1 -->
+              <article class="article-card">
+                <div class="article-image"></div>
+                <div class="article-content">
+                  <div class="article-meta">
+                    <span class="category">Artificial Intelligence</span>
+                    <span class="date">March 15, 2024</span>
+                  </div>
+                  <h3>The Future of AI: What to Expect in 2024</h3>
+                  <p>
+                    Explore the latest developments in artificial intelligence
+                    and how they're shaping the future of technology and
+                    society. From GPT-4 to autonomous vehicles, discover what's
+                    next.
+                  </p>
+                  <div class="article-author">
+                    <span>By Sarah Johnson</span>
+                    <span>5 min read</span>
+                  </div>
+                  <a href="#" class="read-more">Read More →</a>
+                </div>
+              </article>
+
+              <!-- Article 2 -->
+              <article class="article-card">
+                <div class="article-image"></div>
+                <div class="article-content">
+                  <div class="article-meta">
+                    <span class="category">Cybersecurity</span>
+                    <span class="date">March 14, 2024</span>
+                  </div>
+                  <h3>Essential Cybersecurity Practices for 2024</h3>
+                  <p>
+                    Learn about the most important cybersecurity measures every
+                    business and individual should implement this year to
+                    protect against evolving threats.
+                  </p>
+                  <div class="article-author">
+                    <span>By Mike Chen</span>
+                    <span>4 min read</span>
+                  </div>
+                  <a href="#" class="read-more">Read More →</a>
+                </div>
+              </article>
+
+              <!-- Article 3 -->
+              <article class="article-card">
+                <div class="article-image"></div>
+                <div class="article-content">
+                  <div class="article-meta">
+                    <span class="category">Web Development</span>
+                    <span class="date">March 13, 2024</span>
+                  </div>
+                  <h3>Modern Web Development Trends</h3>
+                  <p>
+                    Discover the latest trends in web development, from new
+                    frameworks to emerging technologies that are reshaping the
+                    digital landscape.
+                  </p>
+                  <div class="article-author">
+                    <span>By David Brown</span>
+                    <span>6 min read</span>
+                  </div>
+                  <a href="#" class="read-more">Read More →</a>
+                </div>
+              </article>
+
+              <!-- Article 4 -->
+              <article class="article-card">
+                <div class="article-image"></div>
+                <div class="article-content">
+                  <div class="article-meta">
+                    <span class="category">Cloud Computing</span>
+                    <span class="date">March 12, 2024</span>
+                  </div>
+                  <h3>Cloud Migration Strategies for Enterprise</h3>
+                  <p>
+                    Learn the best practices for migrating your business to the
+                    cloud efficiently and securely, with real-world examples and
+                    expert insights.
+                  </p>
+                  <div class="article-author">
+                    <span>By Lisa Wang</span>
+                    <span>7 min read</span>
+                  </div>
+                  <a href="#" class="read-more">Read More →</a>
+                </div>
+              </article>
+
+              <!-- Article 5 -->
+              <article class="article-card">
+                <div class="article-image"></div>
+                <div class="article-content">
+                  <div class="article-meta">
+                    <span class="category">Data Science</span>
+                    <span class="date">March 11, 2024</span>
+                  </div>
+                  <h3>Big Data Analytics in 2024</h3>
+                  <p>
+                    Explore how big data is transforming industries and creating
+                    new opportunities for businesses to gain competitive
+                    advantages.
+                  </p>
+                  <div class="article-author">
+                    <span>By Alex Rodriguez</span>
+                    <span>5 min read</span>
+                  </div>
+                  <a href="#" class="read-more">Read More →</a>
+                </div>
+              </article>
+
+              <!-- Article 6 -->
+              <article class="article-card">
+                <div class="article-image"></div>
+                <div class="article-content">
+                  <div class="article-meta">
+                    <span class="category">Mobile Tech</span>
+                    <span class="date">March 10, 2024</span>
+                  </div>
+                  <h3>The Rise of Mobile-First Development</h3>
+                  <p>
+                    Understand why mobile-first development is crucial in
+                    today's digital landscape and how to implement it
+                    effectively.
+                  </p>
+                  <div class="article-author">
+                    <span>By Emily Davis</span>
+                    <span>4 min read</span>
+                  </div>
+                  <a href="#" class="read-more">Read More →</a>
+                </div>
+              </article>
+
+              <!-- Article 7 -->
+              <article class="article-card">
+                <div class="article-image"></div>
+                <div class="article-content">
+                  <div class="article-meta">
+                    <span class="category">Artificial Intelligence</span>
+                    <span class="date">March 9, 2024</span>
+                  </div>
+                  <h3>Machine Learning in Healthcare</h3>
+                  <p>
+                    Discover how machine learning is revolutionizing healthcare,
+                    from diagnosis to treatment planning and patient care.
+                  </p>
+                  <div class="article-author">
+                    <span>By Dr. James Wilson</span>
+                    <span>8 min read</span>
+                  </div>
+                  <a href="#" class="read-more">Read More →</a>
+                </div>
+              </article>
+
+              <!-- Article 8 -->
+              <article class="article-card">
+                <div class="article-image"></div>
+                <div class="article-content">
+                  <div class="article-meta">
+                    <span class="category">Cybersecurity</span>
+                    <span class="date">March 8, 2024</span>
+                  </div>
+                  <h3>Zero Trust Security Architecture</h3>
+                  <p>
+                    Learn about the zero trust security model and how it's
+                    becoming the standard for protecting modern digital
+                    environments.
+                  </p>
+                  <div class="article-author">
+                    <span>By Rachel Green</span>
+                    <span>6 min read</span>
+                  </div>
+                  <a href="#" class="read-more">Read More →</a>
+                </div>
+              </article>
+            </div>
+
+            <div class="pagination">
+              <button class="pagination-btn" disabled>← Previous</button>
+              <div class="page-numbers">
+                <span class="page-number active">1</span>
+                <span class="page-number">2</span>
+                <span class="page-number">3</span>
+                <span class="page-number">4</span>
+                <span class="page-number">5</span>
+              </div>
+              <button class="pagination-btn">Next →</button>
+            </div>
+          </main>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter-signup">
+      <div class="container">
+        <div class="newsletter-content">
+          <h2>Stay Updated</h2>
+          <p>
+            Get the latest tech news and insights delivered to your inbox every
+            week.
+          </p>
+          <form class="newsletter-form">
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+          <p class="newsletter-note">No spam, unsubscribe at any time.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>⚡ TechPulse</h3>
+            <p>Your source for the latest technology news and insights.</p>
+            <div class="social-links">
+              <a href="#" class="social-link">📘</a>
+              <a href="#" class="social-link">📷</a>
+              <a href="#" class="social-link">🐦</a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4>Categories</h4>
+            <ul>
+              <li><a href="categories.html">Artificial Intelligence</a></li>
+              <li><a href="categories.html">Cybersecurity</a></li>
+              <li><a href="categories.html">Web Development</a></li>
+              <li><a href="categories.html">Mobile Tech</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="articles.html">Articles</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <p>📧 hello@techpulse.com</p>
+            <p>📱 +1 (555) 123-4567</p>
+            <p>📍 Tech City, TC 12345</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 TechPulse. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Search functionality
+      const searchInput = document.getElementById("searchInput");
+      const articlesGrid = document.getElementById("articlesGrid");
+      const articleCount = document.getElementById("articleCount");
+
+      searchInput.addEventListener("input", function () {
+        const searchTerm = this.value.toLowerCase();
+        const articles = articlesGrid.querySelectorAll(".article-card");
+        let visibleCount = 0;
+
+        articles.forEach((article) => {
+          const title = article.querySelector("h3").textContent.toLowerCase();
+          const content = article.querySelector("p").textContent.toLowerCase();
+
+          if (title.includes(searchTerm) || content.includes(searchTerm)) {
+            article.style.display = "block";
+            visibleCount++;
+          } else {
+            article.style.display = "none";
+          }
+        });
+
+        articleCount.textContent = visibleCount;
+      });
+
+      // Filter functionality
+      const filterCheckboxes = document.querySelectorAll(
+        '.filter-option input[type="checkbox"]'
+      );
+
+      filterCheckboxes.forEach((checkbox) => {
+        checkbox.addEventListener("change", function () {
+          // Add filter logic here
+          console.log("Filter changed:", this.value, this.checked);
+        });
+      });
+
+      // Sort functionality
+      const sortRadios = document.querySelectorAll(
+        '.filter-option input[type="radio"]'
+      );
+
+      sortRadios.forEach((radio) => {
+        radio.addEventListener("change", function () {
+          // Add sort logic here
+          console.log("Sort changed:", this.value);
+        });
+      });
+    </script>
+  </body>
+</html>
