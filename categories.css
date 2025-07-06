@@ -1,0 +1,342 @@
+/* Categories Hero Section */
+.categories-hero {
+  background: linear-gradient(135deg, #3182ce 0%, #2c5282 100%);
+  color: white;
+  text-align: center;
+  padding: 120px 0 80px;
+  position: relative;
+}
+
+.categories-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="tech" width="100" height="100" patternUnits="userSpaceOnUse"><rect x="20" y="20" width="10" height="10" fill="%23ffffff" opacity="0.1"/><rect x="70" y="70" width="10" height="10" fill="%23ffffff" opacity="0.1"/><circle cx="50" cy="50" r="3" fill="%23ffffff" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23tech)"/></svg>');
+  opacity: 0.3;
+}
+
+.categories-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.categories-hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #fbbf24;
+}
+
+.categories-hero p {
+  font-size: 1.25rem;
+  color: #bee3f8;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Categories Content */
+.categories-content {
+  padding: 5rem 0;
+  background: #f7fafc;
+}
+
+.category-section {
+  background: white;
+  border-radius: 20px;
+  margin-bottom: 3rem;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.category-header {
+  background: linear-gradient(135deg, #3182ce 0%, #2c5282 100%);
+  color: white;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.category-info {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.category-icon {
+  font-size: 3rem;
+  flex-shrink: 0;
+}
+
+.category-details h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #fbbf24;
+}
+
+.category-details p {
+  font-size: 1.1rem;
+  color: #bee3f8;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.category-stats {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #bee3f8;
+}
+
+.category-stats span:nth-child(even) {
+  color: #fbbf24;
+}
+
+.category-header .btn {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.category-header .btn:hover {
+  background: white;
+  color: #3182ce;
+  transform: translateY(-2px);
+}
+
+/* Featured Articles */
+.featured-articles {
+  padding: 2rem;
+}
+
+.featured-articles h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a202c;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.featured-articles h3::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: #3182ce;
+  border-radius: 2px;
+}
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.article-card {
+  background: #f7fafc;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.article-image {
+  height: 150px;
+  background: linear-gradient(135deg, #3182ce, #2c5282);
+  position: relative;
+}
+
+.article-image::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+.article-content {
+  padding: 1rem;
+}
+
+.article-meta {
+  margin-bottom: 0.75rem;
+}
+
+.date {
+  color: #718096;
+  font-size: 0.875rem;
+}
+
+.article-content h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a202c;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.article-content p {
+  color: #4a5568;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.article-author {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #718096;
+  font-size: 0.8rem;
+}
+
+/* Newsletter Signup */
+.newsletter-signup {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #3182ce 0%, #2c5282 100%);
+  color: white;
+  text-align: center;
+}
+
+.newsletter-content h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #fbbf24;
+}
+
+.newsletter-content p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #bee3f8;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto 1rem;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.newsletter-form input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+}
+
+.newsletter-note {
+  font-size: 0.875rem;
+  color: #bee3f8;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .category-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .category-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .articles-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .categories-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .category-details h2 {
+    font-size: 1.5rem;
+  }
+
+  .category-details p {
+    font-size: 1rem;
+  }
+
+  .category-stats {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .category-stats span:nth-child(even) {
+    display: none;
+  }
+
+  .articles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .categories-hero h1 {
+    font-size: 2rem;
+  }
+
+  .categories-hero p {
+    font-size: 1rem;
+  }
+
+  .category-header {
+    padding: 1.5rem;
+  }
+
+  .category-icon {
+    font-size: 2.5rem;
+  }
+
+  .category-details h2 {
+    font-size: 1.25rem;
+  }
+
+  .featured-articles {
+    padding: 1.5rem;
+  }
+
+  .featured-articles h3 {
+    font-size: 1.25rem;
+  }
+
+  .newsletter-content h2 {
+    font-size: 2rem;
+  }
+}
