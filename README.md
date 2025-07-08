@@ -197,4 +197,8 @@ For support or questions:
 
 **Built with ❤️ for the tech community**
 
+<<<<<<< HEAD
 *TechPulse - Your source for the latest technology news, insights, and analysis.* 
+=======
+*TechPulse - Your source for the latest technology news, insights, and analysis.*
+>>>>>>> 50cb771a752fa2003ccb6d5b05eae27a107e8f39
